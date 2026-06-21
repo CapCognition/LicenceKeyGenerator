@@ -6,14 +6,35 @@ This repository provides a free licensing SDK for .NET developers. It includes t
 
 The entire License SDK is free to use. It is not limited to CapCognition products and can be used by any developer for independent software products, SDKs, desktop applications, server applications, internal tools and proof-of-concept licensing workflows.
 
+## NuGet package
+
+The complete License SDK is available as a free NuGet package:
+
+[![CapCognition.Net.Licensing](https://img.shields.io/nuget/v/CapCognition.Net.Licensing.svg?label=CapCognition.Net.Licensing)](https://www.nuget.org/packages/CapCognition.Net.Licensing)
+[![NuGet Downloads](https://img.shields.io/nuget/dt/CapCognition.Net.Licensing.svg)](https://www.nuget.org/packages/CapCognition.Net.Licensing)
+
+```bash
+dotnet add package CapCognition.Net.Licensing
+```
+CapCognition.Net.Licensing includes both parts of the licensing workflow:
+
+Functionality	Description
+License generation	Create cryptographic key pairs and generate signed software license keys.
+License validation	Validate signed license keys inside your own .NET applications using the public key.
+
+The package can be used for both the generator side and the consumer/application side.
+
+The SDK is free to use, not limited to CapCognition products, and can be integrated into independent .NET applications, SDKs, desktop applications, server applications and internal tools.
+
 ## What this repository provides
 
 This repository contains a free .NET License SDK and two example console applications:
 
-| Project               | Purpose                                                                                                 |
-| --------------------- | ------------------------------------------------------------------------------------------------------- |
-| `LicenceKeyGenerator` | Creates cryptographic key pairs and generates signed software license keys.                             |
-| `LicenseKeyConsumer`  | Demonstrates how an application can validate a license key for a specific feature using the public key. |
+| Component | Purpose |
+|---|---|
+| `CapCognition.Net.Licensing` | Free NuGet package that supports both license generation and license validation. |
+| `LicenceKeyGenerator` | Example console application that demonstrates how to create key pairs and generate signed license keys. |
+| `LicenseKeyConsumer` | Example console application that demonstrates how to validate a license key for a specific feature using the public key. |
 
 The generator side is intended for the software vendor, application owner or SDK provider.
 
@@ -320,6 +341,12 @@ Useful contributions include:
 * Documentation improvements
 * Additional validation scenarios
 * Production-hardening suggestions
+
+## Useful links
+
+- NuGet package: https://www.nuget.org/packages/CapCognition.Net.Licensing
+- GitHub repository: https://github.com/CapCognition/LicenceKeyGenerator
+- CapCognition: https://capcognition.com
 
 ## License
 
