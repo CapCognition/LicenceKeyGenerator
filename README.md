@@ -307,21 +307,6 @@ Possible improvements for your own licensing system:
 | `.gitignore`              | Git ignore configuration                                         |
 | `README.md`               | Project documentation                                            |
 
-## Naming note
-
-The repository uses the spelling `LicenceKeyGenerator` in its name and project structure.
-
-In documentation and search terms, both spellings are relevant:
-
-* `license key generator`
-* `licence key generator`
-
-Using both terms helps developers find the project regardless of whether they search with US or UK spelling.
-
-## Repository metadata recommendation
-
-For better GitHub discoverability, use the following repository metadata.
-
 ## Contributing
 
 Contributions are welcome.
